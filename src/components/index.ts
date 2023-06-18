@@ -4,6 +4,8 @@ import Text from "./Text";
 import List from "./List";
 import Form from "./Form";
 import Button from "./Button";
+import RegisterSection from "./RegisterSection";
+import ConcludedSection from "./ConcludedSection";
 
 export {
   Illustration,
@@ -12,4 +14,6 @@ export {
   List,
   Form,
   Button,
+  RegisterSection,
+  ConcludedSection,
 }
