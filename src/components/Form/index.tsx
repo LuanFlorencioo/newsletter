@@ -1,9 +1,9 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import Button from "../Button";
 import Label from "./Label";
 import Input from "./Input";
-import ButtonSubmit from "./ButtonSubmit";
 
 const subscribeSchema = z.object({
   email: z.string()
@@ -40,7 +40,9 @@ const Form = () => {
         />
       </div>
 
-      <ButtonSubmit />
+      <Button type="submit">
+        Inscrever-se ao Newsletter mensal
+      </Button>
     </form>
   )
 }

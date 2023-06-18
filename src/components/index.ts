@@ -3,6 +3,7 @@ import Title from "./Title";
 import Text from "./Text";
 import List from "./List";
 import Form from "./Form";
+import Button from "./Button";
 
 export {
   Illustration,
@@ -10,4 +11,5 @@ export {
   Text,
   List,
   Form,
+  Button,
 }
