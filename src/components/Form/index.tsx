@@ -4,6 +4,7 @@ import { z } from "zod";
 import Button from "../Button";
 import Label from "./Label";
 import Input from "./Input";
+import { useAppContext } from "@/contexts";
 
 const subscribeSchema = z.object({
   email: z.string()
@@ -21,10 +22,9 @@ const Form = () => {
   } = useForm<iSubscribe>({
     resolver: zodResolver(subscribeSchema)
   })
+  const { handleRegisteredEmail } = useAppContext();
 
-  const submit = (formData: iSubscribe) => {
-    console.log(formData);
-  }
+  const submit = ({ email }: iSubscribe) => handleRegisteredEmail(email);
 
   return (
     <form
